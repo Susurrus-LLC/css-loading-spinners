@@ -10,7 +10,8 @@ module.exports = {
   plugins: [
     new BabelMinify(),
     new HtmlWebpackPlugin({
-      title: 'Production'
+      title: 'CSS Spinners',
+      template: 'src/index.html'
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
@@ -18,12 +19,34 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  rules: [
-    {
-      exclude: /node_modules/,
-      use: {
-        loader: 'babel-loader'
+  module: {
+    rules: [
+      {
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader'
+        }
+      }, {
+        test: /\.html$/,
+        loader: 'html-loader'
+      }, {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              camelCase: true,
+              sourceMap: true
+            }
+          }
+        ]
       }
-    }
-  ]
+    ]
+  }
 }
