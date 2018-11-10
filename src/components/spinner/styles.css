@@ -1,0 +1,7 @@
+@import '../../variables.css';
+
+.spinner {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem;
+}

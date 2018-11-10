@@ -1,11 +1,9 @@
+import footer from './components/footer'
+import header from './components/header'
+import main from './components/main'
+
 import './styles.css'
 
-const component = () => {
-  const element = document.createElement('div')
-  element.className = 'el'
-  element.innerHTML = 'Hello'
-  return element
-}
-
-const element = component()
-document.body.appendChild(element)
+document.body.appendChild(header)
+document.body.appendChild(main)
+document.body.appendChild(footer)

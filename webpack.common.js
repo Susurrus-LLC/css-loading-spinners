@@ -10,8 +10,13 @@ module.exports = {
   plugins: [
     new BabelMinify(),
     new HtmlWebpackPlugin({
-      title: 'CSS Spinners',
-      template: 'src/index.html'
+      template: 'src/index.html',
+      meta: {
+        charset: 'UTF-8',
+        viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        author: 'Ian A. Cook',
+        description: 'A set of pure CSS loading spinners.'
+      }
     }),
     new webpack.HotModuleReplacementPlugin()
   ],

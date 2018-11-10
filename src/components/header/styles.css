@@ -1,0 +1,11 @@
+@import '../../variables.css';
+
+header {
+  max-width: 75rem;
+  margin: 0 auto 2rem;
+  padding: 0;
+}
+
+.site-title {
+  color: var(--blue);
+}
