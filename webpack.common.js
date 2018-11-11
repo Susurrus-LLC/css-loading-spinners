@@ -49,6 +49,14 @@ module.exports = {
               camelCase: true,
               sourceMap: true
             }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              plugins: [ require('autoprefixer') ],
+              sourceMap: true
+            }
           }
         ]
       }

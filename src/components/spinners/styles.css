@@ -1,21 +1,6 @@
 @import '../../variables.css';
 
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-   @-moz-keyframes spin {
-  0% { -moz-transform: rotate(0deg); }
-  100% { -moz-transform: rotate(360deg); }
-}
-
-     @-o-keyframes spin {
-  0% { -o-transform: rotate(0deg); }
-  100% { -o-transform: rotate(360deg); }
-}
-
-        @keyframes spin {
+@keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
@@ -28,10 +13,7 @@
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  -webkit-animation: spin 2s linear infinite;
-     -moz-animation: spin 2s linear infinite;
-       -o-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
 
 .dual-spin {
@@ -41,31 +23,10 @@
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  -webkit-animation: spin 2s linear infinite;
-     -moz-animation: spin 2s linear infinite;
-       -o-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
 
-@-webkit-keyframes flip-back-and-forth {
-  0% { transform: -webkit-perspective(8rem) -webkit-rotateY(0deg); }
-  50% { transform: -webkit-perspective(8rem) -webkit-rotateY(180deg); }
-  100% { transform: -webkit-perspective(8rem) -webkit-rotateY(0deg); }
-}
-
-   @-moz-keyframes flip-back-and-forth {
-  0% { transform: -moz-perspective(8rem) -moz-rotateY(0deg); }
-  50% { transform: -moz-perspective(8rem) -moz-rotateY(180deg); }
-  100% { transform: -moz-perspective(8rem) -moz-rotateY(0deg); }
-}
-
-     @-o-keyframes flip-back-and-forth {
-  0% { transform: -o-perspective(8rem) -o-rotateY(0deg); }
-  50% { transform: -o-perspective(8rem) -o-rotateY(180deg); }
-  100% { transform: -o-perspective(8rem) -o-rotateY(0deg); }
-}
-
-        @keyframes flip-back-and-forth {
+@keyframes flip-back-and-forth {
   0% { transform: perspective(8rem) rotateY(0deg); }
   50% { transform: perspective(8rem) rotateY(180deg); }
   100% { transform: perspective(8rem) rotateY(0deg); }
@@ -75,8 +36,5 @@
   width: 100%;
   height: 100%;
   background-color: var(--teal);
-  -webkit-animation: flip-back-and-forth 1s ease infinite;
-     -moz-animation: flip-back-and-forth 1s ease infinite;
-       -o-animation: flip-back-and-forth 1s ease infinite;
-          animation: flip-back-and-forth 1s ease infinite;
+  animation: flip-back-and-forth 1s ease infinite;
 }
