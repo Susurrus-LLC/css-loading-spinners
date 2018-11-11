@@ -1,3 +1,4 @@
+import intro from '../intro'
 import spinner from '../spinner'
 import {
   circleSpin,
@@ -12,6 +13,7 @@ import './styles.css'
 
 const main = () => {
   const element = document.createElement('main')
+  element.appendChild(intro)
   const container = element.appendChild(document.createElement('div'))
   container.className = 'container'
   container.appendChild(spinner(circleSpin))
