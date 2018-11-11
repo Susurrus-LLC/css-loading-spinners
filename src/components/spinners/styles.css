@@ -5,36 +5,90 @@
   100% { transform: rotate(360deg); }
 }
 
-.circle-spin {
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+.circle {
   border-width: 0.75rem;
   border-style: solid;
   border-color: #eee;
-  border-top-color: var(--teal);
+  border-top-color: var(--green);
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  animation: spin 2s linear infinite;
 }
 
-.dual-spin {
+.dual-circle {
   border-width: 0.75rem;
   border-style: solid;
-  border-color: var(--teal) #ffffff00;
+  border-color: var(--green) transparent;
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  animation: spin 2s linear infinite;
 }
 
-@keyframes flip-back-and-forth {
+.wedge {
+  border-width: 2.5rem;
+  border-style: solid;
+  border-color: var(--green) transparent;
+  border-radius: 50%;
+}
+
+@keyframes flip-flop {
   0% { transform: perspective(8rem) rotateY(0deg); }
   50% { transform: perspective(8rem) rotateY(180deg); }
   100% { transform: perspective(8rem) rotateY(0deg); }
 }
 
-.square-flip {
+.flip-flop {
+  animation: flip-flop 1s ease infinite;
+}
+
+.square {
   width: 100%;
   height: 100%;
-  background-color: var(--teal);
-  animation: flip-back-and-forth 1s ease infinite;
+  background-color: var(--green);
+}
+
+@keyframes signal {
+  0% {
+    transform: scale(0.01);
+    opacity: 0;
+  } 50% {
+    opacity: 1;
+  } 100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.signal, .triple-signal {
+  animation: signal 1s ease-out infinite;
+}
+
+.triple-signal:before {
+  animation: signal 1s ease-out 100ms infinite;
+}
+
+.triple-signal:after {
+  animation: signal 1s ease-out 300ms infinite;
+}
+
+.signal, .triple-signal, .triple-signal:before, .triple-signal:after {
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: var(--green);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+}
+
+.triple-signal:before, .triple-signal:after {
+  content: '';
+  top: 50%;
+  left: 50%;
+  margin: -2.5rem 0 0 -2.5rem;
 }

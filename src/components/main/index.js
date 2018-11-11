@@ -1,5 +1,12 @@
 import spinner from '../spinner'
-import { circleSpin, dualSpin, squareFlip } from '../spinners'
+import {
+  circleSpin,
+  dualSpin,
+  signal,
+  squareFlip,
+  tripleSignal,
+  wedgeSpin
+} from '../spinners'
 
 import './styles.css'
 
@@ -10,6 +17,9 @@ const main = () => {
   container.appendChild(spinner(circleSpin))
   container.appendChild(spinner(dualSpin))
   container.appendChild(spinner(squareFlip))
+  container.appendChild(spinner(wedgeSpin))
+  container.appendChild(spinner(signal))
+  container.appendChild(spinner(tripleSignal))
   return element
 }
 
