@@ -1,3 +1,5 @@
+import 'normalize.css/normalize.css'
+
 import footer from './components/footer'
 import header from './components/header'
 import main from './components/main'
