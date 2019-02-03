@@ -1,36 +1,19 @@
 {
   "name": "css-spinners",
-  "version": "1.0.0",
-  "license": "AGPL-3.0",
+  "version": "0.1.0",
+  "license": "MIT",
   "author": "Ian A. Cook",
   "description": "Pure CSS spinners",
   "repository": {
     "type": "git",
     "url": "https://github.com/nai888/css-spinners.git"
   },
+  "bugs": "https://github.com/nai888/css-spinners/issues",
   "homepage": "https://nai888.github.io/css-spinners",
   "private": false,
-  "scripts": {
-    "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
-  },
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.1.5",
-    "@babel/preset-env": "^7.1.5",
-    "autoprefixer": "^9.3.1",
-    "babel-loader": "^8.0.4",
-    "babel-minify-webpack-plugin": "^0.3.1",
-    "css-loader": "^1.0.1",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "postcss-loader": "^3.0.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.25.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10",
-    "webpack-merge": "^4.1.4"
-  }
+  "main": "css-spinners.css",
+  "files": [
+    "LICENSE",
+    "css-spinners.css"
+  ]
 }

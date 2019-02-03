@@ -1,4 +1,22 @@
-@import '../../variables.css';
+:root {
+  --red: #984447;
+  --green: #558B6E;
+  --blue: #476C9B;
+  --teal: #468C98;
+  --yellow: #B8C480;
+}
+
+.spinner, .spinner * {
+  box-sizing: border-box;
+}
+
+.spinner {
+  display: block;
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem;
+}
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
