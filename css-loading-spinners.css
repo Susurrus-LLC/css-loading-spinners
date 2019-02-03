@@ -4,6 +4,9 @@
   --blue: #476C9B;
   --teal: #468C98;
   --yellow: #B8C480;
+  --spinner-color: var(--green);
+  --spinner-size: 5rem;
+  --spinner-margin: 1rem;
 }
 
 .spinner, .spinner * {
@@ -13,9 +16,9 @@
 .spinner {
   display: block;
   position: relative;
-  width: 5rem;
-  height: 5rem;
-  margin: 1rem;
+  width: var(--spinner-size);
+  height: var(--spinner-size);
+  margin: var(--spinner-margin);
 }
 
 @keyframes spin {
@@ -31,7 +34,7 @@
   border-width: 0.75rem;
   border-style: solid;
   border-color: #eee;
-  border-top-color: var(--green);
+  border-top-color: var(--spinner-color);
   border-radius: 50%;
   width: 100%;
   height: 100%;
@@ -40,7 +43,7 @@
 .dual-circle {
   border-width: 0.75rem;
   border-style: solid;
-  border-color: var(--green) transparent;
+  border-color: var(--spinner-color) transparent;
   border-radius: 50%;
   width: 100%;
   height: 100%;
@@ -49,7 +52,7 @@
 .wedge {
   border-width: 2.5rem;
   border-style: solid;
-  border-color: var(--green) transparent;
+  border-color: var(--spinner-color) transparent;
   border-radius: 50%;
 }
 
@@ -66,7 +69,7 @@
 .square {
   width: 100%;
   height: 100%;
-  background-color: var(--green);
+  background-color: var(--spinner-color);
 }
 
 @keyframes signal {
@@ -96,7 +99,7 @@
 .signal, .triple-signal, .triple-signal:before, .triple-signal:after {
   border-width: 0.2rem;
   border-style: solid;
-  border-color: var(--green);
+  border-color: var(--spinner-color);
   border-radius: 50%;
   width: 100%;
   height: 100%;
