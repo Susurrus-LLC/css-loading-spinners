@@ -1,5 +1,5 @@
 {
-  "name": "css-spinners",
+  "name": "css-loading-spinners",
   "version": "0.1.0",
   "license": "MIT",
   "author": "Ian A. Cook",
@@ -11,15 +11,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nai888/css-spinners.git"
+    "url": "https://github.com/nai888/css-loading-spinners.git"
   },
-  "bugs": "https://github.com/nai888/css-spinners/issues",
-  "homepage": "https://nai888.github.io/css-spinners",
+  "bugs": "https://github.com/nai888/css-loading-spinners/issues",
+  "homepage": "https://nai888.github.io/css-loading-spinners",
   "private": false,
-  "main": "css-spinners.css",
+  "main": "css-loading-spinners.css",
   "files": [
     "LICENSE",
     "README.md",
-    "css-spinners.css"
+    "css-loading-spinners.css"
   ]
 }
