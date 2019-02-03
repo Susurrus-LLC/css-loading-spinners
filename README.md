@@ -22,9 +22,9 @@ If you need to change the color, size, or margin of the spinner, these are adjus
 
 ```css
 :root {
-  \--spinner-color: /* your color, default \#558B6E */;
-  \--spinner-size: /* your size, default 5rem */;
-  \--spinner-margin: /* your margin, default 1rem */;
+  --spinner-color: /* your color, default #558B6E */;
+  --spinner-size: /* your size, default 5rem */;
+  --spinner-margin: /* your margin, default 1rem */;
 }
 ```
 
