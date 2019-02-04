@@ -7,13 +7,14 @@
   --spinner-color: var(--green);
   --spinner-size: 5rem;
   --spinner-margin: 1rem;
+  --spinner-speed: 100s;
 }
 
-.spinner, .spinner * {
+.cls {
   box-sizing: border-box;
 }
 
-.spinner {
+.cls-spinner {
   display: block;
   position: relative;
   width: var(--spinner-size);
@@ -26,11 +27,11 @@
   100% { transform: rotate(360deg); }
 }
 
-.spin {
-  animation: spin 2s linear infinite;
+.cls-spin {
+  animation: spin calc(var(--spinner-speed) / 50) linear infinite;
 }
 
-.circle {
+.cls-circle {
   border-width: 0.75rem;
   border-style: solid;
   border-color: #eee;
@@ -40,7 +41,7 @@
   height: 100%;
 }
 
-.dual-circle {
+.cls-dual-circle {
   border-width: 0.75rem;
   border-style: solid;
   border-color: var(--spinner-color) transparent;
@@ -49,7 +50,7 @@
   height: 100%;
 }
 
-.wedge {
+.cls-wedge {
   border-width: 2.5rem;
   border-style: solid;
   border-color: var(--spinner-color) transparent;
@@ -62,11 +63,11 @@
   100% { transform: perspective(8rem) rotateY(0deg); }
 }
 
-.flip-flop {
-  animation: flip-flop 1s ease infinite;
+.cls-flip-flop {
+  animation: flip-flop calc(var(--spinner-speed) / 100) ease infinite;
 }
 
-.square {
+.cls-square {
   width: 100%;
   height: 100%;
   background-color: var(--spinner-color);
@@ -84,19 +85,19 @@
   }
 }
 
-.signal, .triple-signal {
-  animation: signal 1s ease-out infinite;
+.cls-signal, .cls-triple-signal {
+  animation: signal calc(var(--spinner-speed) / 100) ease-out infinite;
 }
 
-.triple-signal:before {
-  animation: signal 1s ease-out 100ms infinite;
+.cls-triple-signal:before {
+  animation: signal calc(var(--spinner-speed) / 100) ease-out 100ms infinite;
 }
 
-.triple-signal:after {
-  animation: signal 1s ease-out 300ms infinite;
+.cls-triple-signal:after {
+  animation: signal calc(var(--spinner-speed) / 100) ease-out 300ms infinite;
 }
 
-.signal, .triple-signal, .triple-signal:before, .triple-signal:after {
+.cls-signal, .cls-triple-signal, .cls-triple-signal:before, .cls-triple-signal:after {
   border-width: 0.2rem;
   border-style: solid;
   border-color: var(--spinner-color);
@@ -107,7 +108,7 @@
   position: absolute;
 }
 
-.triple-signal:before, .triple-signal:after {
+.cls-triple-signal:before, .cls-triple-signal:after {
   content: '';
   top: 50%;
   left: 50%;
