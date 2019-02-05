@@ -1,6 +1,9 @@
 # CSS Loading Spinners
 
-Simple loading spinners in pure CSS.
+> Simple loading spinners in pure CSS.
+
+![NPM](https://img.shields.io/npm/v/css-loading-spinners.svg?style=flat)
+![License](https://img.shields.io/github/license/nai888/css-loading-spinners.svg?style=flat)
 
 ## Usage
 
