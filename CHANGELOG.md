@@ -12,6 +12,7 @@ The format of this changelog is based on [Keep a Changelog](https://keepachangel
 - Add LICENSE.
 - Add content to README.md.
 - Add this CHANGELOG.
+- Add `-webkit-` vendor prefix to keyframes and animations.
 
 ### Changed 0.1.1
 

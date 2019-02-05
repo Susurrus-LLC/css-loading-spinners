@@ -7,10 +7,75 @@
   --spinner-color: var(--green);
   --spinner-size: 5rem;
   --spinner-margin: 1rem;
-  --spinner-speed: 100s;
+  --spinner-speed: 2s;
 }
 
-.cls {
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  } 100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  } 100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes flip-flop {
+  0%, 100% {
+    -webkit-transform: perspective(8rem) rotateY(0deg);
+  } 50% {
+    -webkit-transform: perspective(8rem) rotateY(180deg);
+  }
+}
+
+@keyframes flip-flop {
+  0%, 100% {
+    -webkit-transform: perspective(8rem) rotateY(0deg);
+            transform: perspective(8rem) rotateY(0deg);
+  } 50% {
+    -webkit-transform: perspective(8rem) rotateY(180deg);
+            transform: perspective(8rem) rotateY(180deg);
+  }
+}
+
+@-webkit-keyframes signal {
+  0% {
+    -webkit-transform: scale(0.01);
+    -webkit-opacity: 0;
+  } 50% {
+    -webkit-opacity: 1;
+  } 100% {
+    -webkit-transform: scale(1);
+    -webkit-opacity: 0;
+  }
+}
+
+@keyframes signal {
+  0% {
+    -webkit-transform: scale(0.01);
+            transform: scale(0.01);
+    -webkit-opacity: 0;
+            opacity: 0;
+  } 50% {
+    -webkit-opacity: 1;
+            opacity: 1;
+  } 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-opacity: 0;
+            opacity: 0;
+  }
+}
+
+[class^="cls-"] {
   box-sizing: border-box;
 }
 
@@ -22,13 +87,9 @@
   margin: var(--spinner-margin);
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
 .cls-spin {
-  animation: spin calc(var(--spinner-speed) / 50) linear infinite;
+  -webkit-animation: spin var(--spinner-speed) linear infinite;
+          animation: spin var(--spinner-speed) linear infinite;
 }
 
 .cls-circle {
@@ -50,21 +111,20 @@
   height: 100%;
 }
 
-.cls-wedge {
+.cls-bowtie, .cls-bowtie-v {
   border-width: 2.5rem;
   border-style: solid;
-  border-color: var(--spinner-color) transparent;
+  border-color: transparent var(--spinner-color);
   border-radius: 50%;
 }
 
-@keyframes flip-flop {
-  0% { transform: perspective(8rem) rotateY(0deg); }
-  50% { transform: perspective(8rem) rotateY(180deg); }
-  100% { transform: perspective(8rem) rotateY(0deg); }
+.cls-bowtie-v {
+  border-color: var(--spinner-color) transparent;
 }
 
 .cls-flip-flop {
-  animation: flip-flop calc(var(--spinner-speed) / 100) ease infinite;
+  -webkit-animation: flip-flop calc(var(--spinner-speed) / 2) ease infinite;
+          animation: flip-flop calc(var(--spinner-speed) / 2) ease infinite;
 }
 
 .cls-square {
@@ -73,28 +133,19 @@
   background-color: var(--spinner-color);
 }
 
-@keyframes signal {
-  0% {
-    transform: scale(0.01);
-    opacity: 0;
-  } 50% {
-    opacity: 1;
-  } 100% {
-    transform: scale(1);
-    opacity: 0;
-  }
-}
-
 .cls-signal, .cls-triple-signal {
-  animation: signal calc(var(--spinner-speed) / 100) ease-out infinite;
+  -webkit-animation: signal calc(var(--spinner-speed) / 2) ease-out infinite;
+          animation: signal calc(var(--spinner-speed) / 2) ease-out infinite;
 }
 
 .cls-triple-signal:before {
-  animation: signal calc(var(--spinner-speed) / 100) ease-out 100ms infinite;
+  -webkit-animation: signal calc(var(--spinner-speed) / 2) ease-out 100ms infinite;
+          animation: signal calc(var(--spinner-speed) / 2) ease-out 100ms infinite;
 }
 
 .cls-triple-signal:after {
-  animation: signal calc(var(--spinner-speed) / 100) ease-out 300ms infinite;
+  -webkit-animation: signal calc(var(--spinner-speed) / 2) ease-out 300ms infinite;
+          animation: signal calc(var(--spinner-speed) / 2) ease-out 300ms infinite;
 }
 
 .cls-signal, .cls-triple-signal, .cls-triple-signal:before, .cls-triple-signal:after {

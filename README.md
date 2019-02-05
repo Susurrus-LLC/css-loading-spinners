@@ -25,6 +25,7 @@ If you need to change the color, size, or margin of the spinner, these are adjus
   --spinner-color: /* your color, default #558B6E */;
   --spinner-size: /* your size, default 5rem */;
   --spinner-margin: /* your margin, default 1rem */;
+  --spinner-speed: /* your speed, default 2s (time halved for flip-flop and signal animation) */;
 }
 ```
 
