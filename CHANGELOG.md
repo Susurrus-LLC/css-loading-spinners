@@ -29,7 +29,7 @@ The format of this changelog is based on [Keep a Changelog](https://keepachangel
   - Spinner size
   - Spinner margin
   - Spinner speed
-- Add cls- namespace to class names.
+- Add `cls-` namespace to class names.
 
 ## [v0.1.0](https://github.com/nai888/css-loading-spinners/compare/536da3a92b347a57f031c9dd7cae513d91b1f201...1c0f28f03cb53ce48215d3fbe775d0802b29ec33) - 2019-02-03
 
