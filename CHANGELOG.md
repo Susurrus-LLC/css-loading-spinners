@@ -13,6 +13,7 @@ The format of this changelog is based on [Keep a Changelog](https://keepachangel
 - Add content to README.md.
 - Add this CHANGELOG.
 - Add `-webkit-` vendor prefix to keyframes and animations.
+- Add ball and double-ball spinners.
 
 ### Changed 0.1.1
 
