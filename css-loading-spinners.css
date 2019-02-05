@@ -75,7 +75,7 @@
   }
 }
 
-@-webkit-keyframes ball {
+@-webkit-keyframes grow-shrink {
   0%, 100% {
     -webkit-transform: scale(0);
   } 50% {
@@ -83,7 +83,7 @@
   }
 }
 
-@keyframes ball {
+@keyframes grow-shrink {
   0%, 100% {
     -webkit-transform: scale(0);
             transform: scale(0);
@@ -152,7 +152,7 @@
 }
 
 .cls-signal, .cls-triple-signal, .cls-triple-signal::before, .cls-triple-signal::after {
-  border-width: calc(var(--spinner-size) / 5 * 0.2);
+  border-width: calc(var(--spinner-size) / 25);
   border-style: solid;
   border-color: var(--spinner-color);
   border-radius: 50%;
@@ -162,7 +162,7 @@
   position: absolute;
 }
 
-.cls-triple-signal::before, .cls-triple-signal::after, .cls-double-ball::after {
+.cls-triple-signal::before, .cls-triple-signal::after, .cls-rings::before, .cls-rings::after {
   content: '';
   top: 50%;
   left: 50%;
@@ -184,8 +184,8 @@
           animation-delay: calc(var(--spinner-speed) * 3 / 20);
 }
 
-.cls-ball, .cls-double-ball, .cls-double-ball::after {
-  border-width: calc(var(--spinner-size) / 2);
+.cls-ring, .cls-rings, .cls-rings::before, .cls-rings::after {
+  border-width: calc(var(--spinner-size) / 25);
   border-style: solid;
   border-color: var(--spinner-color);
   border-radius: 50%;
@@ -193,16 +193,21 @@
   height: 100%;
 }
 
-.cls-double-ball, .cls-double-ball::after {
+.cls-rings, .cls-rings::before, .cls-rings::after {
   position: absolute;
 }
 
-.cls-ball, .cls-double-ball, .cls-double-ball::after {
-  -webkit-animation: ball var(--spinner-speed) ease-in-out infinite;
-          animation: ball var(--spinner-speed) ease-in-out infinite;
+.cls-ring, .cls-rings, .cls-rings::before, .cls-rings::after {
+  -webkit-animation: grow-shrink var(--spinner-speed) ease-in-out infinite;
+          animation: grow-shrink var(--spinner-speed) ease-in-out infinite;
 }
 
-.cls-double-ball::after {
-  -webkit-animation-delay: calc(var(--spinner-speed) / 2);
-          animation-delay: calc(var(--spinner-speed) / 2);
+.cls-rings::before {
+  -webkit-animation-delay: calc(var(--spinner-speed) / -4);
+          animation-delay: calc(var(--spinner-speed) / -4);
+}
+
+.cls-rings::after {
+  -webkit-animation-delay: calc(var(--spinner-speed) / 4);
+          animation-delay: calc(var(--spinner-speed) / 4);
 }
