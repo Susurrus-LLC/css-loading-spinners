@@ -4,7 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format of this changelog is based on [Keep a Changelog](https://keepachangelog.com) and this project adheres to [Semantic Versioning](https://semver.org/).
 
-## [Unreleased](https://github.com/nai888/css-loading-spinners/compare/536da3a92b347a57f031c9dd7cae513d91b1f201...HEAD)
+## [Unreleased](https://github.com/nai888/css-loading-spinners/compare/v0.1.1...HEAD)
+
+### Added 0.1.2
+
+- Add links for badges on README.
+
+## [v0.1.1](https://github.com/nai888/css-loading-spinners/compare/536da3a92b347a57f031c9dd7cae513d91b1f201...v0.1.1) - 2019-02-04
 
 ### Added 0.1.1
 
@@ -14,6 +20,7 @@ The format of this changelog is based on [Keep a Changelog](https://keepachangel
 - Add this CHANGELOG.
 - Add `-webkit-` vendor prefix to keyframes and animations.
 - Add ring and rings spinners.
+- Add badges to README.
 
 ### Changed 0.1.1
 

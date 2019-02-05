@@ -2,8 +2,8 @@
 
 > Simple loading spinners in pure CSS.
 
-![NPM](https://img.shields.io/npm/v/css-loading-spinners.svg?style=flat)
-![License](https://img.shields.io/github/license/nai888/css-loading-spinners.svg?style=flat)
+[![NPM](https://img.shields.io/npm/v/css-loading-spinners.svg?style=flat)](https://www.npmjs.com/package/css-loading-spinners)
+[![License](https://img.shields.io/github/license/nai888/css-loading-spinners.svg?style=flat)](https://github.com/nai888/css-loading-spinners/blob/master/LICENSE)
 
 ## Usage
 
