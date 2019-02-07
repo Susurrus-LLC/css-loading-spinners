@@ -5,14 +5,8 @@
 */
 
 :root {
-  --red: #984447;
-  --green: #558B6E;
-  --blue: #476C9B;
-  --teal: #468C98;
-  --yellow: #B8C480;
-  --gray: #EEEEEE;
-  --cls-color: var(--green);
-  --cls-sec-color: var(--gray);
+  --cls-color: #558B6E;
+  --cls-sec-color: #EEEEEE;
   --cls-size: 5rem;
   --cls-margin: 1rem;
   --cls-speed: 2s;

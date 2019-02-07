@@ -6,15 +6,20 @@ The format of this changelog is based on [Keep a Changelog](https://keepachangel
 
 ## [Unreleased](https://github.com/nai888/css-loading-spinners/compare/v0.1.1...HEAD)
 
-### Added 0.1.2
+### Added 0.2.0
 
 - Add links for badges on README.
 - Add info to a header at the top of the CSS file.
 - Add a CSS variable for the secondary (gray) color.
+- Add usage and customization instructions to README.
 
-### Changed 0.1.2
+### Changed 0.2.0
 
 - Change `--spinner-*` variables to `--cls-*` variables.
+
+### Removed 0.2.0
+
+- Remove color-specific CSS variables.
 
 ## [v0.1.1](https://github.com/nai888/css-loading-spinners/compare/536da3a92b347a57f031c9dd7cae513d91b1f201...v0.1.1) - 2019-02-04
 
