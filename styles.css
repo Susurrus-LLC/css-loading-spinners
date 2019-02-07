@@ -5,7 +5,8 @@
   --teal: #468C98;
   --yellow: #B8C480;
   --gray: #222222;
-  --spinner-color: white;
+  --cls-color: white;
+  --cls-sec-color: rgba(0, 0, 0, 0.25);
   --bg-color: var(--teal);
 }
 
