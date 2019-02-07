@@ -4,7 +4,9 @@ All notable changes to this project will be documented in this file.
 
 The format of this changelog is based on [Keep a Changelog](https://keepachangelog.com) and this project adheres to [Semantic Versioning](https://semver.org/).
 
-## [Unreleased](https://github.com/nai888/css-loading-spinners/compare/v0.1.1...HEAD)
+## [Unreleased](https://github.com/nai888/css-loading-spinners/compare/v0.2.0...HEAD)
+
+## [v0.2.0](https://github.com/nai888/css-loading-spinners/compare/v0.1.1...v0.2.0) - 2019-02-07
 
 ### Added 0.2.0
 
