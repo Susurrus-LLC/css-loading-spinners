@@ -9,6 +9,7 @@ The format of this changelog is based on [Keep a Changelog](https://keepachangel
 ### Added 0.1.2
 
 - Add links for badges on README.
+- Add info to a header at the top of the CSS file.
 - Add a CSS variable for the secondary (gray) color.
 
 ### Changed 0.1.2
