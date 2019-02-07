@@ -6,6 +6,7 @@
   --yellow: #B8C480;
   --gray: #222222;
   --spinner-color: white;
+  --bg-color: var(--teal);
 }
 
 * {
@@ -18,7 +19,7 @@ html {
 }
 
 body {
-  background-color: var(--teal);
+  background-color: var(--bg-color);
   color: white;
   font-size: 16px;
   font-size: 100%;
