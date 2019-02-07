@@ -4,10 +4,12 @@
   --blue: #476C9B;
   --teal: #468C98;
   --yellow: #B8C480;
-  --spinner-color: var(--green);
-  --spinner-size: 5rem;
-  --spinner-margin: 1rem;
-  --spinner-speed: 2s;
+  --gray: #EEEEEE;
+  --cls-color: var(--green);
+  --cls-sec-color: var(--gray);
+  --cls-size: 5rem;
+  --cls-margin: 1rem;
+  --cls-speed: 2s;
 }
 
 @-webkit-keyframes spin {
@@ -30,19 +32,19 @@
 
 @-webkit-keyframes flip-flop {
   0%, 100% {
-    -webkit-transform: perspective(calc(var(--spinner-size) / 5 * 8)) rotateY(0deg);
+    -webkit-transform: perspective(calc(var(--cls-size) / 5 * 8)) rotateY(0deg);
   } 50% {
-    -webkit-transform: perspective(calc(var(--spinner-size) / 5 * 8)) rotateY(180deg);
+    -webkit-transform: perspective(calc(var(--cls-size) / 5 * 8)) rotateY(180deg);
   }
 }
 
 @keyframes flip-flop {
   0%, 100% {
-    -webkit-transform: perspective(calc(var(--spinner-size) / 5 * 8)) rotateY(0deg);
-            transform: perspective(calc(var(--spinner-size) / 5 * 8)) rotateY(0deg);
+    -webkit-transform: perspective(calc(var(--cls-size) / 5 * 8)) rotateY(0deg);
+            transform: perspective(calc(var(--cls-size) / 5 * 8)) rotateY(0deg);
   } 50% {
-    -webkit-transform: perspective(calc(var(--spinner-size) / 5 * 8)) rotateY(180deg);
-            transform: perspective(calc(var(--spinner-size) / 5 * 8)) rotateY(180deg);
+    -webkit-transform: perspective(calc(var(--cls-size) / 5 * 8)) rotateY(180deg);
+            transform: perspective(calc(var(--cls-size) / 5 * 8)) rotateY(180deg);
   }
 }
 
@@ -100,61 +102,61 @@
 .cls-spinner {
   display: block;
   position: relative;
-  width: var(--spinner-size);
-  height: var(--spinner-size);
-  margin: var(--spinner-margin);
+  width: var(--cls-size);
+  height: var(--cls-size);
+  margin: var(--cls-margin);
 }
 
 .cls-flip-flop {
-  -webkit-animation: flip-flop calc(var(--spinner-speed) / 2) ease infinite;
-          animation: flip-flop calc(var(--spinner-speed) / 2) ease infinite;
+  -webkit-animation: flip-flop calc(var(--cls-speed) / 2) ease infinite;
+          animation: flip-flop calc(var(--cls-speed) / 2) ease infinite;
 }
 
 .cls-spin {
-  -webkit-animation: spin var(--spinner-speed) linear infinite;
-          animation: spin var(--spinner-speed) linear infinite;
+  -webkit-animation: spin var(--cls-speed) linear infinite;
+          animation: spin var(--cls-speed) linear infinite;
 }
 
 .cls-circle {
-  border-width: calc(var(--spinner-size) / 5 * 0.75);
+  border-width: calc(var(--cls-size) / 5 * 0.75);
   border-style: solid;
-  border-color: #eee;
-  border-top-color: var(--spinner-color);
+  border-color: var(--cls-sec-color);
+  border-top-color: var(--cls-color);
   border-radius: 50%;
   width: 100%;
   height: 100%;
 }
 
 .cls-dual-circle {
-  border-width: calc(var(--spinner-size) / 5 * 0.75);
+  border-width: calc(var(--cls-size) / 5 * 0.75);
   border-style: solid;
-  border-color: var(--spinner-color) transparent;
+  border-color: var(--cls-color) transparent;
   border-radius: 50%;
   width: 100%;
   height: 100%;
 }
 
 .cls-bowtie, .cls-bowtie-v {
-  border-width: calc(var(--spinner-size) / 2);
+  border-width: calc(var(--cls-size) / 2);
   border-style: solid;
-  border-color: transparent var(--spinner-color);
+  border-color: transparent var(--cls-color);
   border-radius: 50%;
 }
 
 .cls-bowtie-v {
-  border-color: var(--spinner-color) transparent;
+  border-color: var(--cls-color) transparent;
 }
 
 .cls-square {
   width: 100%;
   height: 100%;
-  background-color: var(--spinner-color);
+  background-color: var(--cls-color);
 }
 
 .cls-signal, .cls-triple-signal, .cls-triple-signal::before, .cls-triple-signal::after {
-  border-width: calc(var(--spinner-size) / 25);
+  border-width: calc(var(--cls-size) / 25);
   border-style: solid;
-  border-color: var(--spinner-color);
+  border-color: var(--cls-color);
   border-radius: 50%;
   width: 100%;
   height: 100%;
@@ -166,28 +168,28 @@
   content: '';
   top: 50%;
   left: 50%;
-  margin: calc(var(--spinner-size) / -2) 0 0 calc(var(--spinner-size) / -2);
+  margin: calc(var(--cls-size) / -2) 0 0 calc(var(--cls-size) / -2);
 }
 
 .cls-signal, .cls-triple-signal, .cls-triple-signal::before, .cls-triple-signal::after {
-  -webkit-animation: signal calc(var(--spinner-speed) / 2) ease-out infinite;
-          animation: signal calc(var(--spinner-speed) / 2) ease-out infinite;
+  -webkit-animation: signal calc(var(--cls-speed) / 2) ease-out infinite;
+          animation: signal calc(var(--cls-speed) / 2) ease-out infinite;
 }
 
 .cls-triple-signal::before {
-  -webkit-animation-delay: calc(var(--spinner-speed) / 20);
-          animation-delay: calc(var(--spinner-speed) / 20);
+  -webkit-animation-delay: calc(var(--cls-speed) / 20);
+          animation-delay: calc(var(--cls-speed) / 20);
 }
 
 .cls-triple-signal::after {
-  -webkit-animation-delay: calc(var(--spinner-speed) * 3 / 20);
-          animation-delay: calc(var(--spinner-speed) * 3 / 20);
+  -webkit-animation-delay: calc(var(--cls-speed) * 3 / 20);
+          animation-delay: calc(var(--cls-speed) * 3 / 20);
 }
 
 .cls-ring, .cls-rings, .cls-rings::before, .cls-rings::after {
-  border-width: calc(var(--spinner-size) / 25);
+  border-width: calc(var(--cls-size) / 25);
   border-style: solid;
-  border-color: var(--spinner-color);
+  border-color: var(--cls-color);
   border-radius: 50%;
   width: 100%;
   height: 100%;
@@ -198,16 +200,16 @@
 }
 
 .cls-ring, .cls-rings, .cls-rings::before, .cls-rings::after {
-  -webkit-animation: grow-shrink var(--spinner-speed) ease-in-out infinite;
-          animation: grow-shrink var(--spinner-speed) ease-in-out infinite;
+  -webkit-animation: grow-shrink var(--cls-speed) ease-in-out infinite;
+          animation: grow-shrink var(--cls-speed) ease-in-out infinite;
 }
 
 .cls-rings::before {
-  -webkit-animation-delay: calc(var(--spinner-speed) / -4);
-          animation-delay: calc(var(--spinner-speed) / -4);
+  -webkit-animation-delay: calc(var(--cls-speed) / -4);
+          animation-delay: calc(var(--cls-speed) / -4);
 }
 
 .cls-rings::after {
-  -webkit-animation-delay: calc(var(--spinner-speed) / 4);
-          animation-delay: calc(var(--spinner-speed) / 4);
+  -webkit-animation-delay: calc(var(--cls-speed) / 4);
+          animation-delay: calc(var(--cls-speed) / 4);
 }

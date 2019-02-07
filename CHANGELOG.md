@@ -9,6 +9,11 @@ The format of this changelog is based on [Keep a Changelog](https://keepachangel
 ### Added 0.1.2
 
 - Add links for badges on README.
+- Add a CSS variable for the secondary (gray) color.
+
+### Changed 0.1.2
+
+- Change `--spinner-*` variables to `--cls-*` variables.
 
 ## [v0.1.1](https://github.com/nai888/css-loading-spinners/compare/536da3a92b347a57f031c9dd7cae513d91b1f201...v0.1.1) - 2019-02-04
 

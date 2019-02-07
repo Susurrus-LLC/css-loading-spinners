@@ -5,7 +5,7 @@
 [![NPM](https://img.shields.io/npm/v/css-loading-spinners.svg?style=flat)](https://www.npmjs.com/package/css-loading-spinners)
 [![License](https://img.shields.io/github/license/nai888/css-loading-spinners.svg?style=flat)](https://github.com/nai888/css-loading-spinners/blob/master/LICENSE)
 
-## Usage
+## Installation
 
 Add CSS Loading Spinners to your project using your favorite package manager:
 
@@ -26,10 +26,11 @@ If you need to change the color, size, or margin of the spinner, these are adjus
 ```css
 :root {
   /* default values below */
-  --spinner-color: var(--green); /* #558B6E */
-  --spinner-size: 5rem;
-  --spinner-margin: 1rem;
-  --spinner-speed: 2s; /* time halved for flip-flop and signal animation */
+  --cls-color: var(--green); /* #558B6E */
+  --cls-sec-color: var(--gray); /* #EEEEEE */
+  --cls-size: 5rem;
+  --cls-margin: 1rem;
+  --cls-speed: 2s; /* time halved for flip-flop and signal animation */
 }
 ```
 
