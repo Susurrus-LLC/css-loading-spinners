@@ -82,6 +82,19 @@ header {
   font-style: italic;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.demonstrations, .instructions {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
 .demonstrations {
   height: 100%;
   display: flex;
@@ -90,6 +103,17 @@ header {
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+.instructions {
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+}
+
+.code {
+  margin: 0;
 }
 
 footer {
