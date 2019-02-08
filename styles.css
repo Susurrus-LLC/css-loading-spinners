@@ -97,12 +97,33 @@ main {
 
 .demonstrations {
   height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+
+.spinner-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.nav-arrow {
+  margin: 0 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.5s;
+          transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+.hovered {
+  opacity: 1;
 }
 
 .instructions {
