@@ -4,9 +4,9 @@ All notable changes to this project will be documented in this file.
 
 The format of this changelog is based on [Keep a Changelog](https://keepachangelog.com) and this project adheres to [Semantic Versioning](https://semver.org/).
 
-## [Unreleased](https://github.com/nai888/css-loading-spinners/compare/v0.2.0...HEAD)
+## [Unreleased](https://github.com/Susurrus-LLC/css-loading-spinners/compare/v0.2.0...HEAD)
 
-## [v0.2.0](https://github.com/nai888/css-loading-spinners/compare/v0.1.1...v0.2.0) - 2019-02-07
+## [v0.2.0](https://github.com/Susurrus-LLC/css-loading-spinners/compare/v0.1.1...v0.2.0) - 2019-02-07
 
 ### Added 0.2.0
 
@@ -23,7 +23,7 @@ The format of this changelog is based on [Keep a Changelog](https://keepachangel
 
 - Remove color-specific CSS variables.
 
-## [v0.1.1](https://github.com/nai888/css-loading-spinners/compare/536da3a92b347a57f031c9dd7cae513d91b1f201...v0.1.1) - 2019-02-04
+## [v0.1.1](https://github.com/Susurrus-LLC/css-loading-spinners/compare/536da3a92b347a57f031c9dd7cae513d91b1f201...v0.1.1) - 2019-02-04
 
 ### Added 0.1.1
 
@@ -44,7 +44,7 @@ The format of this changelog is based on [Keep a Changelog](https://keepachangel
   - Spinner speed
 - Add `cls-` namespace to class names.
 
-## [v0.1.0](https://github.com/nai888/css-loading-spinners/compare/536da3a92b347a57f031c9dd7cae513d91b1f201...1c0f28f03cb53ce48215d3fbe775d0802b29ec33) - 2019-02-03
+## [v0.1.0](https://github.com/Susurrus-LLC/css-loading-spinners/compare/536da3a92b347a57f031c9dd7cae513d91b1f201...1c0f28f03cb53ce48215d3fbe775d0802b29ec33) - 2019-02-03
 
 ### Added 0.1.0
 
