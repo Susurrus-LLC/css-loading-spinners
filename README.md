@@ -3,7 +3,7 @@
 > Simple loading spinners in pure CSS.
 
 [![NPM](https://img.shields.io/npm/v/css-loading-spinners.svg?style=flat)](https://www.npmjs.com/package/css-loading-spinners)
-[![License](https://img.shields.io/github/license/Susurrus-LLC/css-loading-spinners.svg?style=flat)](https://github.com/nai888/css-loading-spinners/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/Susurrus-LLC/css-loading-spinners.svg?style=flat)](https://github.com/Susurrus-LLC/css-loading-spinners/blob/master/LICENSE)
 
 ## Installation
 
